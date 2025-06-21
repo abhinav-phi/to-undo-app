@@ -2,85 +2,93 @@
 
 ![ToUndo Banner](https://img.shields.io/badge/ToUndo-Habit%20Breaking%20App-blue?style=for-the-badge&logo=react)
 
-**ToUndo** is a modern, intuitive task management application designed specifically for breaking unwanted habits and fostering positive behavioral changes. Instead of traditional "to-do" lists, ToUndo focuses on "to-undo" tasks - helping you identify and eliminate negative patterns in your life.
+**ToUndo** is a modern, intuitive habit-breaking application that flips the traditional to-do concept on its head. Instead of managing tasks you need to complete, ToUndo helps you track and eliminate unwanted habits and negative behaviors from your life.
 
 🔗 [Live Demo](https://toundo-app.vercel.app/)
 
 ---
-## 🌟 Features
 
-### Core Functionality
-- **🎯 To-Undo Task Management** - Create tasks focused on breaking bad habits
-- **📂 Smart Categorization** - Organize habits by categories (Health, Social, Work, etc.)
-- **✅ Progress Tracking** - Visual progress bar showing your habit-breaking journey
-- **📅 Calendar Integration** - Set target dates and track completion over time
-- **🔍 Advanced Filtering** - Filter by category, completion status, or view all tasks
+## ✨ What Makes ToUndo Different
 
-### User Experience
-- **🌙 Dark/Light Mode** - Seamless theme switching for comfortable use
-- **📱 Responsive Design** - Works perfectly on desktop, tablet, and mobile
-- **✨ Smooth Animations** - Polished interactions with hover effects and transitions
-- **👤 User Authentication** - Secure login/signup system with personal profiles
-- **💾 Persistent Storage** - Your data is saved and restored across sessions
-
-### Visual Design
-- **🎨 Modern Glassmorphism UI** - Beautiful backdrop blur effects and transparency
-- **🌈 Color-Coded Categories** - Each category has its unique color scheme
-- **📊 Visual Progress Indicators** - Calendar view shows completed vs incomplete days
-- **🎉 Celebration Animations** - Rewarding feedback when you complete tasks
-
-## 📸 Screenshots
-
-<p 
-  align="center">
-<img src = "https://github.com/user-attachments/assets/c770cc50-c513-4cd6-a9d8-a95af088ea18" align="center" height="500">
-</p>
-<p 
-  align="center">
-<img src = "https://github.com/user-attachments/assets/5bba9a76-b556-4cd3-975e-9727134bf027" align="center" height="500">
-</p>
-<p 
-  align="center">
-<img src = "https://github.com/user-attachments/assets/8e74c42d-3b9e-4bad-ae05-1c89ad1facce" align="center" height="500">
-</p>
+Traditional productivity apps focus on what you *should* do. ToUndo focuses on what you want to *stop* doing - helping you identify, track, and systematically eliminate habits that don't serve you.
 
 ---
+
+## 🌟 Features
+
+### 🎯 Core Functionality
+- **To-Undo Task Management** - Create tasks focused on breaking unwanted habits
+- **Smart Categorization** - Organize habits across 9 predefined categories (Life, Work, Relationships, Health, etc.)
+- **Progress Tracking** - Visual progress indicators showing your habit-breaking journey
+- **Calendar Integration** - Monthly calendar view with daily completion tracking
+- **Advanced Filtering** - Filter by category, completion status, or specific dates
+- **Task Management** - Edit, delete, and update tasks with inline editing capabilities
+
+### 👤 User Experience
+- **Secure Authentication** - User registration and login system with persistent sessions
+- **Personal Profiles** - Individual user accounts with isolated task data
+- **Theme Switching** - Seamless dark/light mode toggle
+- **Responsive Design** - Optimized for desktop, tablet, and mobile devices
+- **Persistent Storage** - All data automatically saved to localStorage
+- **Intuitive Interface** - Clean, modern design with smooth animations
+
+### 🎨 Visual Design
+- **Modern Glassmorphism UI** - Beautiful backdrop blur effects and semi-transparent elements
+- **Gradient Backgrounds** - Dynamic animated background elements
+- **Color-Coded Categories** - Each category has distinct visual styling
+- **Interactive Animations** - Hover effects, transitions, and micro-interactions
+- **Calendar Visualization** - Visual representation of daily progress
+
+---
+
+## 📱 Categories
+
+ToUndo includes 9 comprehensive habit categories:
+
+| Category | Icon |
+|----------|------|
+| **🌱 Life** | General life improvements and personal growth 
+| **💼 Work** | Professional habits and productivity 
+| **💝 Relationships** | Social interactions and communication patterns 
+| **🔄 Habits** | General behavioral patterns 
+| **💪 Health & Fitness** | Physical and mental wellness 
+| **📚 Learning** | Educational and skill development 
+| **🚨 Urgent** | High-priority behavioral changes 
+| **🎯 Personal Projects** | Self-improvement initiatives 
+| **📋 Other** | Miscellaneous habits 
+
+---
+
 ## 🛠️ Tech Stack
 
-- **Frontend Framework**: React 18 with TypeScript
-- **Styling**: Tailwind CSS with custom utilities
+- **Frontend**: React 18 with TypeScript
+- **Styling**: Tailwind CSS with custom utilities and dark mode support
 - **Icons**: Lucide React icon library
 - **Date Handling**: date-fns for robust date operations
 - **State Management**: React Hooks (useState, useEffect)
-- **Theme Management**: Custom useTheme hook
-- **Build Tool**: Vite 
+- **Build Tool**: Vite for fast development and building
+- **Linting**: ESLint with TypeScript support
 
-## 📱 Component Architecture
+---
 
-### Core Components
-- **`TaskCard`** - Individual task display with inline editing
-- **`AddTaskModal`** - Modal for creating new to-undo tasks
-- **`Calendar`** - Monthly calendar view with task completion status
-- **`ProgressBar`** - Visual representation of overall progress
-- **`CategoryFilter`** - Smart filtering system with task counts
+## 🏗️ Architecture
 
-### UI Components
-- **`AuthModal`** - Login/signup modal with form validation
+### Core Hooks
+- **`useAuth`** - Authentication state management with localStorage persistence
+- **`useTasks`** - Task CRUD operations with user-specific data isolation
+- **`useTheme`** - Theme switching with system preference detection
+
+### Key Components
+- **`TaskCard`** - Individual task display with inline editing and category styling
+- **`AddTaskModal`** - Modal for creating new habit-breaking tasks
+- **`Calendar`** - Monthly calendar with task completion visualization
+- **`ProgressBar`** - Overall progress tracking across all tasks
+- **`CategoryFilter`** - Smart filtering with task count indicators
+- **`AuthModal`** - User authentication with login/signup forms
 - **`UserProfile`** - User display with logout functionality
 - **`ThemeToggle`** - Dark/light mode switcher
-- **`FloatingAddButton`** - Mobile-optimized quick add button
-- **`Footer`** - Social links and attribution
 
-## 🎯 Categories
-
-ToUndo comes with pre-configured habit categories:
-
-- **💪 Health** - Physical and mental wellness habits
-- **📱 Social** - Social media and digital detox
-- **💼 Work** - Productivity and work-related habits
-- **🎮 Habits** - General behavioral patterns
-- **📚 Personal** - Self-improvement and learning
-- **💰 Finance** - Money management and spending habits
+---
 
 ## 🚀 Getting Started
 
@@ -99,88 +107,112 @@ ToUndo comes with pre-configured habit categories:
 2. **Install dependencies**
    ```bash
    npm install
-   # or
-   yarn install
    ```
 
 3. **Start the development server**
    ```bash
    npm run dev
-   # or
-   yarn dev
    ```
 
 4. **Open your browser**
-   Navigate to `http://localhost:5173` (or the port shown in your terminal)
+   Navigate to `http://localhost:5173`
 
-### Building for Production
+### Available Scripts
 
-```bash
-npm run build
-# or
-yarn build
-```
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
+
+---
 
 ## 📖 How to Use
 
-1. **Sign Up/Login** - Create an account or log in to save your progress
-2. **Add To-Undo Tasks** - Click "Add Task" and describe what habit you want to break
-3. **Choose Category** - Select the most relevant category for better organization
-4. **Set Target Date** - Optionally set when you want to achieve this goal
-5. **Track Progress** - Mark tasks as complete when you successfully avoid the habit
-6. **Monitor Calendar** - Use the calendar view to see your consistency over time
-7. **Filter & Focus** - Use category filters to focus on specific areas of improvement
+### Getting Started
+1. **Create Account** - Sign up with username, password, and optional email
+2. **Login** - Access your personal dashboard
+3. **Add Habits** - Click "Add Task" to create your first habit to break
+
+### Managing Tasks
+1. **Categorize** - Choose the most relevant category for organization
+2. **Set Due Dates** - Optional target dates for motivation
+3. **Track Progress** - Check off tasks when you successfully avoid the habit
+4. **Monitor Trends** - Use the calendar to see patterns and consistency
+
+### Advanced Features
+- **Filter Tasks** - View by category, completion status, or specific dates
+- **Edit Tasks** - Update task details with inline editing
+- **Calendar View** - Visual tracking of daily progress
+- **Progress Analytics** - See completion rates and streaks
+
+---
 
 ## 🎨 Design Philosophy
 
-ToUndo embraces a **positive psychology approach** to habit breaking:
+ToUndo embraces a **positive psychology approach** to behavior change:
 
-- **Reframing**: Instead of focusing on what you "should do," focus on what you want to "stop doing"
-- **Visual Feedback**: Immediate visual confirmation of progress
-- **Gentle Interface**: Calming colors and smooth animations reduce stress
-- **Progress Celebration**: Clear indicators of success and improvement
-- **Flexibility**: Easy editing and categorization without judgment
+- **Reframing Mindset** - Focus on elimination rather than addition
+- **Visual Feedback** - Immediate confirmation of progress and success
+- **Non-Judgmental Interface** - Calming design that reduces anxiety around change
+- **Flexible Tracking** - Easy modification without perfectionism pressure
+- **Celebration of Progress** - Clear indicators of improvement and milestones
+
+---
 
 ## 🔧 Customization
 
-### Adding New Categories
-Edit the `CATEGORIES` configuration in your categories config file:
+### Adding Categories
+Extend the categories in `src/config/categories.ts`:
 
 ```typescript
-export const CATEGORIES = {
+export const CATEGORIES: Record<string, CategoryConfig> = {
   newCategory: {
-    name: 'New Category',
-    icon: '🎯',
-    color: 'text-purple-700',
-    bgColor: 'bg-purple-100',
-    borderColor: 'border-purple-200'
+    name: 'Custom Category',
+    color: 'text-purple-700 dark:text-purple-400',
+    bgColor: 'bg-purple-50 dark:bg-purple-900/20',
+    borderColor: 'border-purple-200 dark:border-purple-700',
+    icon: '🎯'
   }
 };
 ```
 
 ### Theme Customization
-The app uses Tailwind CSS classes for styling. Modify the theme colors in your Tailwind config or update the CSS custom properties for the glassmorphism effects.
+- Modify Tailwind config in `tailwind.config.js`
+- Update CSS custom properties for glassmorphism effects
+- Customize gradient backgrounds in `App.tsx`
+
+### Storage Options
+Currently uses localStorage. Can be extended to support:
+- Backend API integration
+- Cloud storage synchronization
+- Multi-device data sync
+
+---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Here's how you can help:
+Contributions are welcome! Please follow these steps:
 
 1. **Fork the repository**
 2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
-3. **Commit your changes** (`git commit -m 'Add amazing feature'`)
-4. **Push to the branch** (`git push origin feature/amazing-feature`)
+3. **Commit changes** (`git commit -m 'Add amazing feature'`)
+4. **Push to branch** (`git push origin feature/amazing-feature`)
 5. **Open a Pull Request**
 
 ### Development Guidelines
-- Follow TypeScript best practices
-- Maintain responsive design principles
+- Maintain TypeScript strict mode compliance
+- Follow existing code patterns and naming conventions
+- Ensure responsive design across all screen sizes
+- Test on both light and dark themes
 - Write meaningful commit messages
-- Test on multiple devices/browsers
-- Keep accessibility in mind
+
+---
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
 
 ## 👨‍💻 Author
 
@@ -189,23 +221,28 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 📷 [Instagram](https://instagram.com/abhinav.phi)
 - 💻 [GitHub](https://github.com/abhinav-phi)
 
+---
+
 ## 🙏 Acknowledgments
 
-- **React Community** for the amazing ecosystem
-- **Tailwind CSS** for the utility-first approach
-- **Lucide Icons** for the beautiful icon set
-- **date-fns** for reliable date handling
-- **All contributors** who help improve ToUndo
+- **React Community** for the robust ecosystem
+- **Tailwind CSS** for utility-first styling approach
+- **Lucide Icons** for beautiful, consistent iconography
+- **date-fns** for reliable date manipulation
+- **Vite** for lightning-fast development experience
+- **TypeScript** for type safety and developer experience
 
 ---
 
 <div align="center">
 
-**Made with ❤️ & 🍵 by Abhinav**
+**Made with ❤️ & ☕ by Abhinav**
 
-[⭐ Star this repository](https://github.com/abhinav-phi/to-undo-app) if you found it helpful!
+[⭐ Star this repository](https://github.com/abhinav-phi/to-undo-app) if it helps you break free from unwanted habits!
 
 </div>
+
+---
 
 ## 📊 Project Stats
 
@@ -216,4 +253,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-*"The best way to get rid of a bad habit is to replace it with a good one." - ToUndo helps you identify what to replace first.*
+*"The chains of habit are too weak to be felt until they are too strong to be broken." - ToUndo helps you break them while they're still weak.*
