@@ -53,7 +53,7 @@
 - **Date Handling**: date-fns for robust date operations
 - **State Management**: React Hooks (useState, useEffect)
 - **Theme Management**: Custom useTheme hook
-- **Build Tool**: Vite (assumed from modern React setup)
+- **Build Tool**: Vite 
 
 ## 📱 Component Architecture
 
